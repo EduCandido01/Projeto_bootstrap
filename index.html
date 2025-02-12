@@ -1,85 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madara Uchiha - Carrossel</title>
+    <!-- Incluindo o Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 900px;
+            margin-top: 50px;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        .info {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">história</a>
+      <a class="nav-link" href="">história</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="index.html">Link</a>
+      <a class="nav-link" href="contatos.html">Link</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" href="index.html" tabindex="-1" aria-disabled="true">Comunicaçõs</a>
+      <a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Comunicaçõs</a>
     </li>
   </ul>
-  <br>
-  <div class="container" style="display: flex; justify-content: space-between;">
-    <div class="row" >
-      <div class="col">
-      <figure class="figure">
-      <img src="img/316dlixm4tgc1.jpeg" class="figure-img img-fluid rounded" alt="...">
-      <figcaption class="figure-caption">Madara sentado em meio a guerra.</figcaption>
-    </figure>
-      </div>
-      <div class="col order-5">
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          <span class="input-group-text" id="basic-addon2">@example.com</span>
-        </div>
-        
-        <label for="basic-url" class="form-label">Your vanity URL</label>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-        </div>
-        
-        <div class="input-group mb-3">
-          <span class="input-group-text">$</span>
-          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          <span class="input-group-text">.00</span>
-        </div>
-        
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-          <span class="input-group-text">@</span>
-          <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-        </div>
-        
-        <div class="input-group">
-          <span class="input-group-text">With textarea</span>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-      </div>
-      <div class="col order-1" style="width: 300px;">
-        Proibido conteúdo adulto
-        Proibido conteúdo agressivo
-        Proibido trava zap
-        Proibido enviar links
-        Antes de acessar o grupo de whatsapp 🏴‍☠️☠️CHAT DO MADARA☠️🏴‍☠️, esteja ciente que você precisa estar de acordo com todas as regras do grupo. É importante dizer também que este é um grupo independente, sem nenhuma relação com o nosso site e o único responsável por ele é o administrador do grupo. O 🏴‍☠️☠️CHAT DO MADARA☠️🏴‍☠️ faz parte da categoria de Desenhos e Animes e já foi acessado 59 vezes através do nosso site.
-     
-  <div>
-   
 
- 
- </div>
+<div class="container">
+    <!-- Carrossel -->
+    <div id="carouselMadara" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/madara-uchiha-2560x1440-14899.jpg" class="d-block w-100" alt="Madara Uchiha" height="200px">
+            </div>
+            <div class="carousel-item">
+                <img src="img/madara-uchiha-from-naruto.avif" class="d-block w-100" alt="Madara Uchiha em ação" height="200px">
+            </div>
+            <div class="carousel-item">
+                <img src="img/madara-uchiha.avif" class="d-block w-100" alt="Madara Uchiha em batalha" height="200px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMadara" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMadara" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-  </div>
+
+    <!-- Informações sobre Madara Uchiha -->
+    <div class="info">
+        <h2>Madara Uchiha</h2>
+        <p>Madara Uchiha foi um dos fundadores da Vila Oculta da Folha (Konohagakure) junto com Hashirama Senju. Ele é conhecido por ser um dos shinobis mais poderosos da história, com habilidades que o tornaram uma lenda. Após uma luta épica com seu amigo e rival Hashirama, Madara tornou-se o líder do clã Uchiha e começou a seguir um caminho de ambição em busca do poder absoluto.</p>
+        <p>Durante os eventos de *Naruto*, Madara desempenha um papel crucial como antagonista, sendo responsável por manipular eventos que levaram à Quarta Grande Guerra Ninja. Seu objetivo era criar um mundo onde as pessoas não sofressem mais, mas para isso, ele estava disposto a sacrificar tudo, inclusive sua própria humanidade.</p>
+    </div>
 </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Incluindo o Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

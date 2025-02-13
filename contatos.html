@@ -21,32 +21,47 @@
         footer a:hover {
             text-decoration: underline;
         }
+        .figure{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
   </style>
 </head>
 <body>
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="historia.html">História</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contatos.html">Contatos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="index.html" tabindex="-1" aria-disabled="true">Descubra mais</a>
-    </li>
-  </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Loja Madara Uchiha</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historia.html">História</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loja.html">Loja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contatos.html">Contatos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <br>
 
-
+<form class="col-sm-12 col-md-8">
   <div class="container" style="display: flex; justify-content: space-between;">
     <div class="row">
       <div class="col-lg-4">
         <figure class="figure">
           <img src="img/316dlixm4tgc1.jpeg" class="figure-img img-fluid rounded" alt="...">
-          <figcaption class="figure-caption">Madara sentado em meio à guerra.</figcaption>
+          <figcaption class="figure-caption"></figcaption>
         </figure>
       </div>
 
@@ -86,6 +101,7 @@
       </div>
     </div>
   </div>
+</form>
   <br>
   <footer>
     <p>&copy; 2025 História de Madara Uchiha. Eduardo C. Jesus.</p>

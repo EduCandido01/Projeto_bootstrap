@@ -71,6 +71,8 @@
         </figure>
       </div>
 
+      <div class="linha"></div>
+
       <div class="col-lg-4 order-5">
         <form id="formContato">
           <div class="input-group mb-3">
@@ -116,24 +118,24 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <!-- Aqui começa o código JavaScript para enviar o formulário sem redirecionar -->
+  
   <script>
-    // Pegue o formulário e adicione um ouvinte de evento para o envio
+   
     document.getElementById('formContato').addEventListener('submit', function(event) {
-      event.preventDefault(); // Impede o comportamento padrão (redirecionamento)
+      event.preventDefault(); 
 
-      // Coleta os dados do formulário
+     
       const formData = new FormData(this);
 
-      // Envia os dados via fetch
+      
       fetch('processar_formulario.php', {
         method: 'POST',
         body: formData
       })
-      .then(response => response.json()) // Supondo que o servidor retorne JSON
+      .then(response => response.json()) 
       .then(data => {
-        alert('Formulário enviado com sucesso!'); // Mensagem de sucesso
-        console.log(data); // Exibe os dados retornados no console
+        alert('Formulário enviado com sucesso!'); 
+        console.log(data); 
       })
       .catch(error => {
         alert('Formulário enviado com sucesso!');
